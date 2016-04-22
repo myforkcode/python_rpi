@@ -13,7 +13,7 @@ To configure the openwrt buildroot, put a line below in your feeds.conf.
 
 .. code-block:: text
 
-    src-git rpi_gpio https://bitbucket.org/pman0214/rpi-gpio-openwrt.git
+    src-git python_rpi_gpio https://bitbucket.org/pman0214/rpi-gpio-openwrt.git
 
 Copyright, License
 ==================
