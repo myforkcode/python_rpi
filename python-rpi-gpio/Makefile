@@ -38,12 +38,10 @@ PKG_MD5SUM:=9db86fd5f3bae872de9dbb068ee0b096
 PKG_LICENSE:=MIT
 PKG_MAINTAINER:=Shigemi ISHIDA <ishida+devel@f.ait.kyushu-u.ac.jp>
 
-PKG_BUILD_DEPENDS:=python python-dev
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
-
-#PKG_UNPACK:=tar zxf $(DL_DIR)/$(PKG_SOURCE) -C $(PKG_BUILD_DIR)/
 
 define Package/python-rpi-gpio
   SUBMENU:=Python
