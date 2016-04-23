@@ -1,10 +1,13 @@
 .. -*- coding: utf-8; -*-
 
-====================================
- OpenWrt Feed for Raspberry Pi GPIO
-====================================
+================================================
+ OpenWrt Feed for Python Module on Raspberry Pi
+================================================
 
-This is an openwrt feed providing `Rpi.GPIO python module <https://pypi.python.org/pypi/RPi.GPIO>`_.
+This is an openwrt feed providing python modules for Raspberry Pi.
+The feed provides packages below:
+
+* `Rpi.GPIO python module <https://pypi.python.org/pypi/RPi.GPIO>`_.
 
 Usage
 =====
@@ -13,7 +16,7 @@ To configure the openwrt buildroot, put a line below in your feeds.conf.
 
 .. code-block:: text
 
-    src-git python_rpi_gpio https://bitbucket.org/pman0214/rpi-gpio-openwrt.git
+    src-git python_rpi https://github.com/pman0214/python_rpi.git
 
 Copyright, License
 ==================
