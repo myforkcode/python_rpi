@@ -64,5 +64,26 @@ define Build/Compile
 	)
 endef
 
+define Package/python-rpi-gpio/postinst
+#!/bin/sh
+# check if we are on real system
+if [ -z "$${IPKG_INSTROOT}" ]; then
+    echo "Creating a symlink /lib/libc.so to /lib/libc.so.0"
+    cd /lib
+    ln -s /lib/libc.so.0 /lib/libc.so
+fi
+exit 0
+endef
+
+define Package/python-rpi-gpio/prerm
+#!/bin/sh
+# check if we are on real system
+if [ -z "$${IPKG_INSTROOT}" ]; then
+    echo "Creating a symlink /lib/libc.so"
+    rm /lib/libc.so
+fi
+exit 0
+endef
+
 $(eval $(call PyPackage,python-rpi-gpio))
 $(eval $(call BuildPackage,python-rpi-gpio))
