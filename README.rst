@@ -5,7 +5,7 @@
 ================================================
 
 This is an openwrt feed providing python modules for Raspberry Pi.
-The feed provides packages below:
+The feed provides moduless below:
 
 * `Rpi.GPIO python module <https://pypi.python.org/pypi/RPi.GPIO>`_.
 
@@ -17,6 +17,12 @@ To configure the openwrt buildroot, put a line below in your feeds.conf.
 .. code-block:: text
 
     src-git python_rpi https://github.com/pman0214/python_rpi.git
+
+Testing
+=======
+
+The feed is only tested with Chaos Calmer 15.05 on Raspberry Pi 2.
+Bug reports and pull requests are welcome.
 
 Copyright, License
 ==================
