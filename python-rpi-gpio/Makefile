@@ -29,12 +29,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=RPi.GPIO
-PKG_VERSION:=0.7.0
+PKG_VERSION:=0.6.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/cb/88/d3817eb11fc77a8d9a63abeab8fe303266b1e3b85e2952238f0da43fed4e/
-PKG_MD5SUM:=777617f9dea9a1680f9af43db0cf150e
+PKG_SOURCE_URL:=https://files.pythonhosted.org/packages/e2/58/6e1b775606da6439fa3fd1550e7f714ac62aa75e162eed29dbec684ecb3e/
+PKG_MD5SUM:=e4abe1cfb5eacebe53078032256eb837
 
 PKG_LICENSE:=MIT
 PKG_MAINTAINER:=Shigemi ISHIDA <ishida+devel@f.ait.kyushu-u.ac.jp>
